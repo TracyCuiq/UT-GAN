@@ -28,7 +28,7 @@ DIR = '/data/BossClf/BOSSBase_256'
 print("CUDA Available: ",torch.cuda.is_available())
 device = torch.device("cuda" if (use_cuda and torch.cuda.is_available()) else "cpu")
 
-pretrained_model = '/data/cuiqi/ASGAN/models/netG_epoch_1.pth'
+pretrained_model = '/data/ASGAN/models/netG_epoch_1.pth'
 img_prob_eval_path = './eval_result/'
 
 mytransform = transforms.Compose([transforms.ToTensor(),]) 
